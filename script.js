@@ -18,9 +18,7 @@ SportsCar.prototype=Object.create(Car.prototype)
 SportsCar.prototype.getTopSpeed=function () {
 	return this.topspeed
 }
-const car = new SportsCar("Ferrari", "Testarossa", 200);
-console.log(car.getMakeModel()); // Output: Ferrari Testarossa
-console.log(car.getTopSpeed()); // Output: 200
+
 
 
 // Do not change the code below
