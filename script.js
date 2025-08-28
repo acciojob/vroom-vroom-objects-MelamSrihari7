@@ -1,5 +1,7 @@
 // Complete the js code
 function Car(make, model) {
+	if(typeof make!=="string"||typeof model!=="string")
+	{return}
 	this.make=make
 	this.model=model
 }
