@@ -16,7 +16,7 @@ function SportsCar(make, model, topSpeed) {
 }
 SportsCar.prototype=Object.create(Car.prototype)
 SportsCar.prototype.getTopSpeed=function () {
-	return this.topspeed
+	return this.topSpeed
 }
 
 // const car = new SportsCar("Ferrari", "Testarossa", 200);
