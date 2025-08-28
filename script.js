@@ -12,20 +12,22 @@ Car.prototype.getMakeModel=function(){
 function SportsCar(make, model, topSpeed) {
 	this.make=make
 	this.model=model
-	this.topspeed=topSpeed
+	this.topSpeed=topSpeed
 }
 SportsCar.prototype=Object.create(Car.prototype)
 SportsCar.prototype.getTopSpeed=function () {
 	return this.topSpeed
 }
 
-// const car = new SportsCar("Ferrari", "Testarossa", 200);
+const car = new SportsCar("Ferrari", "Testarossa", 200);
 
-// // Call getMakeModel() to get the make and model of the car
-// console.log(car.getMakeModel()); // Output: Ferrari Testarossa
+// Call getMakeModel() to get the make and model of the car
+console.log(car.getMakeModel()); // Output: Ferrari Testarossa
 
-// // Call getTopSpeed() to get the top speed of the sports car
-// console.log(car.getTopSpeed()); // Output: 200
+// Call getTopSpeed() to get the top speed of the sports car
+console.log(car.getTopSpeed()); // Output: 200
+
+document.body.innerHTML = `${car.getMakeModel()} ${car.getTopSpeed()}`
 
 // Do not change the code below
 window.Car = Car;
